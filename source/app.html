@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<body style="margin: 0; background:none" >
+	
+	<!-- Singular Widget Library -->
+	<script src="https://app.singular.live/libs/singularwidget/1.0.1/singularwidget.js"></script>
+
+	<script>
+		SingularWidget.init({
+		  onInit: onSingularInit,
+		  onValue: onSingularValue,
+		  onButtonClicked: onSingularButtonClicked
+		});
+	
+		function onSingularInit() {
+			console.log("onSingularInit"); 
+		}
+		
+		function onSingularValue(json) {
+			console.log("onSingularValue: \n" + json);
+		}
+
+		function onSingularButtonClicked(action) {
+			console.log("onSingularButtonClicked: " + action); 
+		}
+
+  </script>
+</body>
+</html>
